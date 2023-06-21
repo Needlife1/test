@@ -488,3 +488,72 @@
 // console.log(calсulateAverage(1, 2, 3, 4)); // 2.5
 // console.log(calсulateAverage(14, 8, 2)); // 8
 // console.log(calсulateAverage(27, 43, 2, 8, 36)); // 23.2
+
+// -----------------------------------------------------------------------
+
+// const processCall = (recipient, onAvailable, onNotAvailable) => {
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   console.log(isRecipientAvailable);
+
+//   if (!isRecipientAvailable) {
+//     onAvailable(recipient);
+//     return;
+//   }
+//   onNotAvailable(recipient);
+// };
+
+// const Autoresponder = (name) =>
+//   console.log(`Абонент ${name} недоступен, оставьте сообщение.`);
+
+// const callAccepted = (name) => console.log(`Соединяем с ${name}, ожидайте...`);
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступен, записываем голограмму.`);
+// }
+
+// processCall("Mango", callAccepted, Autoresponder);
+// processCall("Loly", callAccepted, leaveHoloMessage);
+
+// --------------------------------------------------------------------
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+
+//   order(pizzaName, onSuccess, onError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     }
+//     return onError(pizzaName);
+//   },
+// };
+
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+// --------------------------------------------------------------------------
+
+// function getCommonElements(firstArray, secondArray) {
+//   console.log(firstArray);
+//   const commonElements = [];
+
+//   firstArray.forEach((el) => {
+//     if (secondArray.includes(el)) {
+//       commonElements.push(el);
+//     }
+//   });
+
+//   return commonElements;
+// }
+
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+
+// ----------------------------------------------------------------------

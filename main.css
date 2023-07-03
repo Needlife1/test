@@ -1,0 +1,55 @@
+/* -----------main11--(3)------------------------ */
+/* body {
+    margin: 24px;
+} */
+
+/* ---------------------(4)-----------------------------*/
+
+/* body {
+    maring: 24px;
+}
+
+.usernames li {
+    padding: 8px;
+    border: 2px dashed tomato;
+    text-transform: uppercase;
+}
+
+.usernames li:not(:last-child) {
+    margin-bottom: 12px;
+} */
+/* ---------------------(5)------------------------- */
+/* body {
+    margin: 16px;
+    font-family: sans-serif;
+} */
+
+/* < !-- 6--------Шаблонная разметка--------------------- --> */
+
+body {
+    padding: 16px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.list-item {
+    padding: 8px;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.list-item:nth-child(even) {
+    border-color: tomato;
+}
+
+.list-item:nth-child(odd) {
+    border-color: blueviolet;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 8px;
+}

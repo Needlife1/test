@@ -244,24 +244,24 @@ const technologys = ["css", "html", "js", "react", "node"];
 
 // ---------------------------------------------------------------------
 
-const colors = [
-  {
-    label: "red",
-    color: "#FF0000",
-  },
-  {
-    label: "green",
-    color: "#00FF00",
-  },
-  {
-    label: "blue",
-    color: "#0000FF",
-  },
-  {
-    label: "yellow",
-    color: "#FFFF00",
-  },
-];
+// const colors = [
+//   {
+//     label: "red",
+//     color: "#FF0000",
+//   },
+//   {
+//     label: "green",
+//     color: "#00FF00",
+//   },
+//   {
+//     label: "blue",
+//     color: "#0000FF",
+//   },
+//   {
+//     label: "yellow",
+//     color: "#FFFF00",
+//   },
+// ];
 
 // const divEl = document.querySelector(".js-product-box");
 

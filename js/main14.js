@@ -125,3 +125,52 @@
 //     console.log(target.value);
 //   }, 1000)
 // );
+
+// ---------------------------шляпа------------
+
+// const arr = [84, "f", 434, "o", 22, 90, "P", 11];
+// const literFiltred = arr.filter((el) => typeof el !== "number");
+
+// const litterserr = literFiltred.reduce((acc, el) => {
+//   return (acc += el.toLowerCase());
+// }, "");
+// console.log(litterserr);
+
+// -----------------------------------------------
+// const obj = {
+//   name: "Alex",
+//   eyes: "green",
+// };
+
+// function foo(msg) {
+//   console.log(this);
+//   console.log(`${this.name} has ${this.eyes} eyse color`);
+//   console.log(msg);
+// }
+
+// foo.call(obj, "Hello, world");
+// foo.apply(obj, ["Hello, world"]);
+
+// ------------------Сброс формы Reset()--------------------------
+
+// const form = document.getElementById("form");
+// console.log(form);
+
+// form.addEventListener("submit", resetForm);
+
+// function resetForm(e) {
+//   e.preventDefault();
+//   form.reset();
+// }
+
+// -----------------Делегирование--------------------------
+
+// const form = document.getElementById("form");
+
+// form.addEventListener("click", ev);
+
+// function ev(e) {
+//   console.log(e.currentTarget);
+
+//   console.log(e.target);
+// }

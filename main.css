@@ -361,4 +361,17 @@ input {
     margin: 10px;
 } */
 
-/* -------------------main15------------------------ */
+/* < !-- ---------------------main17-------------------- -->< !-- 
+// ----------------------ОПОВЕШЕНИЯ------------------------------ --> */
+
+.not-visible {
+    display: none;
+}
+
+button:disabled {
+    background-color: black;
+    color: greenyellow;
+    border: 5px solid greenyellow;
+    border-radius: 20px;
+    cursor: not-allowed;
+}

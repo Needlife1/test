@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "title": "Kukold",
+      "author": "Viktorya Vaginella",
+      "rating": 9,
+      "id": 1
+    },
+    {
+      "title": "Тестовая книга",
+      "author": "Я",
+      "rating": 10,
+      "id": 4
+    },
+    {
+      "title": "Papa zaeblsa",
+      "author": "Роберт Шлюх",
+      "rating": 8.7,
+      "id": 5
+    }
+  ]
+}

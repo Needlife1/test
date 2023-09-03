@@ -137,47 +137,47 @@
 
 // --------------Таймер обратного отшета до НГ----------------------
 
-const stopBtn = document.querySelector(".stop-btn");
-const startBtn = document.querySelector(".start-btn");
-const clockFace = document.querySelector(".clock-face");
+// const stopBtn = document.querySelector(".stop-btn");
+// const startBtn = document.querySelector(".start-btn");
+// const clockFace = document.querySelector(".clock-face");
 
-stopBtn.addEventListener("click", stopTimer);
-startBtn.addEventListener("click", startTimer);
+// stopBtn.addEventListener("click", stopTimer);
+// startBtn.addEventListener("click", startTimer);
 
-const countDownDate = new Date(`Jan 1, ${new Date().getFullYear() + 1}`);
+// const countDownDate = new Date(`Jan 1, ${new Date().getFullYear() + 1}`);
 
-countDownDateTuNY();
+// countDownDateTuNY();
 
-let timeInterval = setInterval(countDownDateTuNY, 1000);
+// let timeInterval = setInterval(countDownDateTuNY, 1000);
 
-function countDownDateTuNY() {
-  const now = Date.now();
-  const diff = countDownDate - now;
+// function countDownDateTuNY() {
+//   const now = Date.now();
+//   const diff = countDownDate - now;
 
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
+//   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+//   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+//   const minutes = Math.floor((diff / (1000 * 60)) % 60);
+//   const seconds = Math.floor((diff / 1000) % 60);
 
-  clockFace.textContent = `${days} d. ${addZero(hours)} h. ${addZero(
-    minutes
-  )} m. ${seconds} s.`;
-}
+//   clockFace.textContent = `${days} d. ${addZero(hours)} h. ${addZero(
+//     minutes
+//   )} m. ${seconds} s.`;
+// }
 
-function startTimer() {
-  stopBtn.disabled = false;
-  startBtn.disabled = true;
-  timeInterval = setInterval(countDownDateTuNY, 1000);
-  alert("THe timer works!");
-}
+// function startTimer() {
+//   stopBtn.disabled = false;
+//   startBtn.disabled = true;
+//   timeInterval = setInterval(countDownDateTuNY, 1000);
+//   alert("THe timer works!");
+// }
 
-function stopTimer() {
-  stopBtn.disabled = true;
-  startBtn.disabled = false;
-  clearInterval(timeInterval);
-  alert("The timer has been stopped!");
-}
+// function stopTimer() {
+//   stopBtn.disabled = true;
+//   startBtn.disabled = false;
+//   clearInterval(timeInterval);
+//   alert("The timer has been stopped!");
+// }
 
-function addZero(number) {
-  return String(number).padStart(2, 0);
-}
+// function addZero(number) {
+//   return String(number).padStart(2, 0);
+// }
